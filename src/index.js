@@ -1,6 +1,6 @@
 const db = require("./db");
 
-db.query("SELECT NOW() AS dataAtual", (err, results) => {
+db.query("SELECT *from CidadesBrasil", (err, results) => {
   if (err) {
     console.error("Erro na consulta:", err);
     return;
