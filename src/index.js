@@ -7,3 +7,11 @@ db.query("SELECT NOW() AS dataAtual", (err, results) => {
   }
   console.log("Resultado:", results);
 });
+
+
+
+//qualquer coisa só pra simular o conflito
+
+for(i=0;i<10;i++){
+    print(i);
+}
