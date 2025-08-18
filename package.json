@@ -1,0 +1,14 @@
+{
+  "name": "genrenciador-de-cidades",
+  "version": "1.0.0",
+  "description": "projeto de Engenharia de software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matheus Bernardo",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.14.3"
+  }
+}
