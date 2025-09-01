@@ -4,11 +4,14 @@
   "description": "projeto de Engenharia de software",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Matheus Bernardo",
   "license": "ISC",
   "dependencies": {
     "mysql2": "^3.14.3"
+  },
+  "devDependencies": {
+    "jest": "^30.1.2"
   }
 }

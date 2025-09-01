@@ -1,21 +1,30 @@
-# Gerenciador de Cidades
 
-Um projeto Node.js para gerenciar cidades, permitindo cadastro, consulta e manipulação de dados em um banco de dados simples.
+# Sistema de Locadora de Filmes
+
+Projeto Node.js orientado a objetos para controle de uma locadora de filmes. Permite cadastrar filmes e clientes, alugar e devolver filmes, e listar o catálogo, tudo via interação no terminal.
+
+## Tecnologias Utilizadas
+- Node.js
+- Jest (para testes unitários)
 
 ## Funcionalidades
-- Adicionar novas cidades
-- Listar cidades cadastradas
-- Buscar cidades por nome
-- Remover cidades
+- Cadastrar filmes
+- Cadastrar clientes
+- Alugar filmes
+- Devolver filmes
+- Listar filmes
 
 ## Estrutura do Projeto
 ```
 Genrenciador-de-Cidades/
 ├── src/
-│   ├── db.js         # Módulo de acesso ao banco de dados
-│   └── index.js      # Ponto de entrada da aplicação
-├── package.json      # Dependências e scripts
-└── README.md         # Documentação
+│   ├── Filme.js         # Classe Filme
+│   ├── Cliente.js       # Classe Cliente
+│   ├── Locadora.js      # Classe Locadora
+│   ├── index.js         # Ponto de entrada interativo
+│   └── locadora.test.js # Testes unitários
+├── package.json         # Dependências e scripts
+└── README.md            # Documentação
 ```
 
 ## Como executar
@@ -23,17 +32,29 @@ Genrenciador-de-Cidades/
    ```powershell
    npm install
    ```
-2. Execute o projeto:
+2. Execute o sistema interativo:
    ```powershell
    node src/index.js
    ```
+   Siga o menu apresentado no terminal para interagir com o sistema.
 
-## Dependências
-- Node.js
-- (Veja `package.json` para detalhes)
+## Testes Unitários
+Os testes utilizam o Jest e cobrem cenários positivos e negativos.
 
-## Contribuição
-Sinta-se à vontade para abrir issues ou enviar pull requests!
+1. Instale o Jest:
+   ```powershell
+   npm install --save-dev jest
+   ```
+2. Adicione ao seu `package.json`:
+   ```json
+   "scripts": {
+     "test": "jest"
+   }
+   ```
+3. Execute os testes:
+   ```powershell
+   npm test
+   ```
 
 ## Resolução de Conflitos
 
