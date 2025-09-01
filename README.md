@@ -65,6 +65,14 @@ Antes da realização do Pull Request (PR) defeituoso, todos os testes estavam p
 
 Essa evidência garante que o sistema estava íntegro e funcional antes da introdução de novas alterações pelo PR.
 
+## Situação dos Testes Após o PR Defeituoso
+
+Após a realização do Pull Request (PR) defeituoso, alguns testes passaram a falhar, conforme imagem abaixo:
+
+![Testes NOK](src/testesNOK.png)
+
+Essa evidência demonstra que o PR introduziu problemas no sistema, tornando-o inconsistente e indicando a necessidade de correção das alterações realizadas.
+
 ## Resolução de Conflitos
 
 Durante o desenvolvimento, houve um conflito relacionado à alteração de uma query SQL feita pelo colaborador Matheus. Para resolver o conflito, utilizei a plataforma web do GitHub, seguindo os passos abaixo:
