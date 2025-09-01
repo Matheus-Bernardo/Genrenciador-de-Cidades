@@ -38,6 +38,7 @@ Genrenciador-de-Cidades/
    ```
    Siga o menu apresentado no terminal para interagir com o sistema.
 
+
 ## Testes Unitários
 Os testes utilizam o Jest e cobrem cenários positivos e negativos.
 
@@ -55,6 +56,14 @@ Os testes utilizam o Jest e cobrem cenários positivos e negativos.
    ```powershell
    npm test
    ```
+
+## Situação dos Testes Antes do PR
+
+Antes da realização do Pull Request (PR) defeituoso, todos os testes estavam passando corretamente, conforme imagem abaixo:
+
+![Testes OK](src/testesOK.png)
+
+Essa evidência garante que o sistema estava íntegro e funcional antes da introdução de novas alterações pelo PR.
 
 ## Resolução de Conflitos
 
