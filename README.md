@@ -61,17 +61,21 @@ Os testes utilizam o Jest e cobrem cenários positivos e negativos. Para rodar o
 
 ## Evidências dos Testes
 
+
 ### Antes do PR Defeituoso
-Antes da realização do Pull Request (PR) defeituoso, todos os testes estavam passando corretamente:
+Antes da realização do Pull Request (PR) defeituoso, os testes estavam sendo executados, mas já apresentavam falhas, conforme evidenciado abaixo:
 
 ![Testes OK](src/testesOK.png)
 
+> **Observação:** O erro apresentado refere-se à função `print` não definida, indicando que já havia problemas no código antes do PR. Isso demonstra a importância de revisar e corrigir falhas antes de realizar novas alterações.
+
+
 ### Após o PR Defeituoso
-Após a realização do PR defeituoso, alguns testes passaram a falhar:
+Após a realização do PR defeituoso, os testes continuaram apresentando falhas, como mostrado abaixo:
 
 ![Testes NOK](src/testesNOK.png)
 
-Essas evidências mostram claramente o impacto do PR defeituoso no projeto, facilitando a identificação e correção dos problemas.
+Essas evidências mostram que o PR não corrigiu os problemas existentes e pode ter introduzido novos erros, reforçando a necessidade de validação dos testes antes e depois de qualquer alteração.
 
 ## Resolução de Conflitos
 
