@@ -1,4 +1,5 @@
 
+
 # Sistema de Locadora de Filmes
 
 Projeto Node.js orientado a objetos para controle de uma locadora de filmes. Permite cadastrar filmes e clientes, alugar e devolver filmes, e listar o catálogo, tudo via interação no terminal.
@@ -23,6 +24,8 @@ Genrenciador-de-Cidades/
 │   ├── Locadora.js      # Classe Locadora
 │   ├── index.js         # Ponto de entrada interativo
 │   └── locadora.test.js # Testes unitários
+│   ├── testesOK.png     # Evidência dos testes OK
+│   ├── testesNOK.png    # Evidência dos testes NOK
 ├── package.json         # Dependências e scripts
 └── README.md            # Documentação
 ```
@@ -38,9 +41,8 @@ Genrenciador-de-Cidades/
    ```
    Siga o menu apresentado no terminal para interagir com o sistema.
 
-
 ## Testes Unitários
-Os testes utilizam o Jest e cobrem cenários positivos e negativos.
+Os testes utilizam o Jest e cobrem cenários positivos e negativos. Para rodar os testes:
 
 1. Instale o Jest:
    ```powershell
@@ -57,21 +59,19 @@ Os testes utilizam o Jest e cobrem cenários positivos e negativos.
    npm test
    ```
 
-## Situação dos Testes Antes do PR
+## Evidências dos Testes
 
-Antes da realização do Pull Request (PR) defeituoso, todos os testes estavam passando corretamente, conforme imagem abaixo:
+### Antes do PR Defeituoso
+Antes da realização do Pull Request (PR) defeituoso, todos os testes estavam passando corretamente:
 
 ![Testes OK](src/testesOK.png)
 
-Essa evidência garante que o sistema estava íntegro e funcional antes da introdução de novas alterações pelo PR.
-
-## Situação dos Testes Após o PR Defeituoso
-
-Após a realização do Pull Request (PR) defeituoso, alguns testes passaram a falhar, conforme imagem abaixo:
+### Após o PR Defeituoso
+Após a realização do PR defeituoso, alguns testes passaram a falhar:
 
 ![Testes NOK](src/testesNOK.png)
 
-Essa evidência demonstra que o PR introduziu problemas no sistema, tornando-o inconsistente e indicando a necessidade de correção das alterações realizadas.
+Essas evidências mostram claramente o impacto do PR defeituoso no projeto, facilitando a identificação e correção dos problemas.
 
 ## Resolução de Conflitos
 
