@@ -12,7 +12,7 @@ class Locadora {
   }
 
   cadastrarCliente(cliente) {
-    print('zoei de novo')
+    this.clientes.push(cliente);
   }
 
   alugarFilme(clienteId, filmeId) {

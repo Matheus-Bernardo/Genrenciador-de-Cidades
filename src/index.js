@@ -47,7 +47,17 @@ function menu() {
 }
 
 function cadastrarFilme() {
-	print('Zoei')
+	rl.question('ID do filme: ', id => {
+		rl.question('Título: ', titulo => {
+			rl.question('Gênero: ', genero => {
+				rl.question('Ano: ', ano => {
+					locadora.cadastrarFilme(new Filme(Number(id), titulo, genero, Number(ano)));
+					console.log('Filme cadastrado com sucesso!');
+					menu();
+				});
+			});
+		});
+	});
 }
 
 function cadastrarCliente() {
