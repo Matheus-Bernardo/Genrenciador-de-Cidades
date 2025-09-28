@@ -1,6 +1,7 @@
 {
   "name": "genrenciador-de-cidades",
   "version": "1.0.0",
+  "type": "module",
   "description": "projeto de Engenharia de software",
   "main": "index.js",
   "scripts": {
@@ -9,9 +10,23 @@
   "author": "Matheus Bernardo",
   "license": "ISC",
   "dependencies": {
-    "mysql2": "^3.14.3"
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "joi": "^18.0.1",
+    "knex": "^3.1.0",
+    "mysql2": "^3.14.3",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "jest": "^30.1.2"
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "babel-jest": "^30.2.0",
+    "jest": "^30.1.2",
+    "nodemon": "^3.1.10",
+    "vitest": "^3.2.4"
   }
 }
