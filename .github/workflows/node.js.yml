@@ -33,7 +33,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    needs: tests
     strategy:
       matrix:
         node-version: [18.x]
@@ -54,4 +53,16 @@ jobs:
       with:
         name: build-package
         path: build.tar.gz
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: [tests, build]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send notification email
+        run: python send_email.py
+        env:
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          EMAIL: ${{ secrets.EMAIL_TO }}
     
