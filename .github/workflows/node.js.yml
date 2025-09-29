@@ -20,8 +20,6 @@ jobs:
         with:
           node-version: 18
 
-      - run: npm ci
-
       - name: Run tests with report
         run: npx vitest run --reporter=default --reporter=junit --outputFile=./test-results/junit.xml
 
