@@ -46,9 +46,6 @@ jobs:
         node-version: 18
     - run: npm ci
 
-    - name: Build project
-      run: npm run build
-
     - name: Package build
       run: tar -czf build.tar.gz dist
 
