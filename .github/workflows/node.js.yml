@@ -20,6 +20,8 @@ jobs:
         with:
           node-version: 18
 
+      - run: npm ci
+
       - name: Run tests with report
         run: npx vitest run --reporter=default --reporter=junit --outputFile=./test-results/junit.xml
 
@@ -31,10 +33,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: [18.x]
-        
+
     steps:
     - uses: actions/checkout@v4
     - name: Setup Node
@@ -63,4 +66,3 @@ jobs:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
           EMAIL: ${{ secrets.EMAIL_TO }}
-    
